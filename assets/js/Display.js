@@ -25,6 +25,15 @@ class Display {
         this.tipoOperacion = undefined;
         this.imprimirValores();
     }
+    negativo(){
+        if(this.valorActual ==0){
+            this.valorAnterior = this.valorAnterior *-1;
+        }else{
+            this.valorActual = this.valorActual *-1;
+        }
+        
+        this.imprimirValores();
+    }
 
     computar(tipo) {
         this.tipoOperacion !== 'igual' && this.calcular();
