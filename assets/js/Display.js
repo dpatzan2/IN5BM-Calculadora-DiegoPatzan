@@ -35,6 +35,7 @@ class Display {
         this.imprimirValores();
     }
 
+
     computar(tipo) {
         this.tipoOperacion !== 'igual' && this.calcular();
         this.tipoOperacion = tipo;
